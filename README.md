@@ -26,11 +26,21 @@ Requirements:
 - Do not commit lockfiles (package-lock.json, yarn.lock, pnpm-lock.yaml).
 
 ### 3) README updates (required)
-
-Update this README to include:
-
-- how to run the tests locally,
-- how to build and run tests with Docker.
+**LOCAL TESTING**
+1. ```
+    npm install
+    npm test
+   ```
+**DOCKER TESTING**
+1. Build the image:
+    ```
+    docker build -t ai-engineer-assignment .
+    ```
+2. Run the container:
+    ```
+    docker run -d ai-engineer-assignment
+    ```
+    
 
 ### 4) Find + fix a bug (required)
 
